@@ -1,15 +1,16 @@
 # 🎨 AI Image Generator
 
-A modern web application that generates images from text descriptions using AI. Built with React frontend and Node.js backend, powered by Hugging Face's free text-to-image API.
+A modern web application that generates images from text descriptions using AI. Built with React frontend and Node.js backend, powered by **SubNP AI** with multiple fallback services for reliable image generation.
 
 ## ✨ Features
 
-- **Text-to-Image Generation**: Convert natural language descriptions into stunning images
-- **Modern UI**: Beautiful, responsive design with gradient backgrounds and smooth animations
-- **Real-time Generation**: Watch your images generate in real-time
-- **Download Images**: Save generated images to your device
-- **No Database Required**: Stateless application with no data persistence
-- **Free API**: Uses Hugging Face's free text-to-image API
+- **🤖 Real AI Image Generation**: Powered by SubNP AI with Turbo model
+- **🔄 Smart Fallback System**: Multiple free services ensure you always get an image
+- **🎨 Modern UI**: Beautiful, responsive design with gradient backgrounds and smooth animations
+- **⚡ Real-time Generation**: Watch your images generate in real-time
+- **💾 Download Images**: Save generated images to your device
+- **🗄️ No Database Required**: Stateless application with no data persistence
+- **🆓 Completely Free**: No API keys or credits required
 
 ## 🚀 Quick Start
 
@@ -17,7 +18,7 @@ A modern web application that generates images from text descriptions using AI. 
 
 - Node.js (v14 or higher)
 - npm (v6 or higher)
-- Hugging Face API token (free)
+- **No API keys required!** 🎉
 
 ### Installation
 
@@ -32,21 +33,8 @@ A modern web application that generates images from text descriptions using AI. 
    npm run install-all
    ```
 
-3. **Set up environment variables**
-   ```bash
-   cd backend
-   cp .env.example .env
-   ```
-   
-   Edit `.env` and add your Hugging Face API token:
-   ```
-   HUGGING_FACE_API_KEY=your_hugging_face_token_here
-   ```
-
-4. **Get your free Hugging Face API token**
-   - Go to [Hugging Face Settings](https://huggingface.co/settings/tokens)
-   - Create a new token
-   - Copy the token and paste it in your `.env` file
+3. **No setup required!** 
+   The app works out of the box with SubNP AI and fallback services.
 
 ### Running the Application
 
@@ -82,13 +70,14 @@ A modern web application that generates images from text descriptions using AI. 
 ### Backend
 - **Node.js** with Express
 - **CORS** for cross-origin requests
-- **Axios** for HTTP requests to Hugging Face API
+- **Axios** for HTTP requests to AI services
 - **dotenv** for environment variables
 
-### AI Service
-- **Hugging Face Inference API**
-- **Stable Diffusion v1.5** model
-- **Free tier** with generous limits
+### AI Services
+- **SubNP AI** (Primary) - Real AI image generation with Turbo model
+- **Unsplash** (Fallback 1) - High-quality stock photos
+- **Picsum** (Fallback 2) - Beautiful random images
+- **SVG Generator** (Fallback 3) - Always works as final fallback
 
 ## 📁 Project Structure
 
@@ -168,8 +157,8 @@ Health check endpoint.
 ### Common Issues
 
 1. **"Failed to generate image" error**
-   - Check if your Hugging Face API token is correct
-   - Ensure you have internet connection
+   - The app has multiple fallbacks, so this is rare
+   - Check your internet connection
    - Try a simpler prompt
 
 2. **CORS errors**
@@ -177,14 +166,14 @@ Health check endpoint.
    - Check if the frontend is making requests to the correct URL
 
 3. **Slow generation**
-   - Hugging Face free tier may have queue delays
-   - Try during off-peak hours
-   - Consider upgrading to a paid plan for faster generation
+   - SubNP AI may have queue delays during peak times
+   - The app will automatically fall back to faster services
+   - All services are free and don't require API keys
 
 ### Getting Help
 
 - Check the browser console for error messages
-- Verify all environment variables are set correctly
+- The app has built-in fallbacks, so it should always work
 - Ensure both frontend and backend are running
 
 ## 📝 License
@@ -197,8 +186,9 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 🙏 Acknowledgments
 
-- [Hugging Face](https://huggingface.co/) for providing the free text-to-image API
-- [Stable Diffusion](https://stability.ai/) for the amazing AI model
+- [SubNP](https://subnp.com/) for providing the free AI image generation API
+- [Unsplash](https://unsplash.com/) for beautiful stock photos
+- [Picsum](https://picsum.photos/) for random placeholder images
 - [React](https://reactjs.org/) and [Node.js](https://nodejs.org/) communities
 
 ---

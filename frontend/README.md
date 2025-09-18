@@ -1,6 +1,15 @@
-# Getting Started with Create React App
+# 🎨 AI Image Generator - Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Modern React frontend for the AI Image Generator application, powered by SubNP AI with smart fallback services.
+
+## ✨ Features
+
+- **🤖 Real AI Image Generation** - Powered by SubNP AI
+- **🔄 Smart Fallback System** - Multiple free services ensure reliability
+- **🎨 Modern UI** - Beautiful, responsive design with gradients and animations
+- **⚡ Real-time Generation** - Watch images generate in real-time
+- **💾 Download Images** - Save generated images to your device
+- **📱 Responsive Design** - Works perfectly on all devices
 
 ## Available Scripts
 
